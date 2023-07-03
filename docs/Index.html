@@ -1,0 +1,208 @@
+<title>Events</title>
+
+<style>
+  .header {
+    width: 97%;
+    padding: 24px;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    background: #D3F2FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+  }
+
+  .header-content {
+    color: #111C58;
+    font-size: 25px;
+    font-family: Helvetica;
+    font-weight: 600;
+    word-wrap: break-word;
+    white-space: nowrap;
+    margin-right: 75px;
+  }
+
+  .ContactUs a {
+    color: white;
+    font-size: 25px;
+    font-family: Helvetica;
+    font-weight: 600;
+    word-wrap: break-word;
+    margin-left: auto; /* Align the button to the right */
+    padding: 10px; 
+    background: #1187BA; 
+    border-radius: 10px;
+    text-decoration: none; 
+    position: absolute;
+    top: 14px; 
+    right: 24px;
+  }
+
+  .main-content {
+    width: 100%;
+    max-width: 797px;
+    height: 650px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+    position: absolute;
+    background: #D3F2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .info-text {
+    color: #111C58;
+    font-size: 55px;
+    font-family: Abhaya Libre ExtraBold;
+    font-weight: 800;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .date-text {
+    color: #111C58;
+    font-size: 55px;
+    font-family: Abhaya Libre Medium;
+    font-weight: 500;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-section {
+    width: 100%;
+    height: 164px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: #1494CB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 3000; 
+  }
+
+  .contact-text {
+    color: #111C58;
+    font-size: 50px;
+    font-family: Crimson Text;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .contact-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+  }
+
+  .title-text {
+    font-size: 55px;
+    color: #1494CB;
+    font-size: 96px;
+    font-family: Croissant One;
+    font-weight: 800;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+    margin-top: 20px; 
+    text-align: center;
+  }
+
+  a, a:hover, a:active, a:visited { 
+    text-decoration: none; 
+  }
+
+</style>
+
+<head>
+  <script>
+    document.querySelector('.ContactUs').addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default behavior of the anchor link
+      document.querySelector('.contact-section').scrollIntoView({ behavior: 'smooth' }); // Scroll to the contact-section element with smooth scrolling
+    });
+  </script>
+</head>
+
+<div style="width: 100%; height: 3000px; position: relative">
+  <div style="width: 100%; max-width: 100%; height: 3000px; left: 0; right: 0; top: 0; position: absolute; background: white">
+    <div class="header">
+      <div class="header-content"><u>Home</u></div>
+      <div class="header-content"><a href="About.html">About</a></div>
+      <div class="header-content"><a href="Events.html">Events</a></div>
+      <div class="header-content"><a href="Recruitment.html">Recruitment</a></div>
+      <div class="header-content">FAQs</div>
+      <div class="ContactUs"><a href="#contact-section">Contact Us!</a></div>
+    </div>
+    <div class="title-container">
+      <div class="title-text">PANHELLENIC</div>
+    </div>
+
+    <!--Carousele-->
+    <img style="width: 565px; height: 358.63px; left: 465px; top: 260px; position: absolute" src="img_46962.png" />
+
+    <!--Proud to Be Panhellenic-->
+    <div style="width: 500px; left: 525px; position: absolute; height: 87px; top: 700px; color: #111C58; font-size: 40px; font-family: Crimson Text; font-style: italic; font-weight: 700">“Proud to be Panhellenic”</div>
+
+    <!--Core Values-->
+    <div style="width: 833px; height: 255.85px; left: 335px; position: absolute; top: 825px; background: #D3F2FF"></div>
+    <div style="width: 748.12px; left: 375px; height: 60.07px; top: 950px; position: absolute; text-align: center; color: #111C58; font-size: 36px; font-family: Crimson Text; font-weight: 600; word-wrap: break-word">Academics, Leadership, Service, Sisterhood, Diversity</div>
+    <div style="width: 793.33px; height: 78.66px; left: 350px; top: 875px; position: absolute; text-align: center; color: #1187BA; font-size: 40px; font-family: Perpetua Titling MT; font-weight: 700; word-wrap: break-word">Our Core Values</div>
+
+    <!--Divider Line-->
+    <div style="width: 1121px; height: 0px; left: 171px; top: 1275px; position: absolute; border: 2.50px #1187BA solid"></div>
+
+    <!--Letter From the President-->
+    <div style="width: 1277px; height: 75px; left: 275px; position: absolute; top: 1350px; color: #1187BA; font-size: 50px; font-family: Croissant One; font-weight: 400; word-wrap: break-word">Letter From the President: Why Panhellenic?</div>
+    <!--Box-->
+    <div style="width: 1240px; height: 622px; top: 1450px; position: absolute; left: 130px; background: #D3F2FF"></div>
+    <!--Letter-->
+    <div style="width: 272px; top: 1475px; position: absolute; left: 160px; height: 583px; color: #111C58; font-size: 21.5px; font-family: Crimson Text; font-weight: 600; word-wrap: break-word">Hi! <br/><br/>The College Panhellenic Association is the largest women-run student organization on our campus at 12 chapters and about 1,100 members. Each of our sorority chapters is a member or affiliate member of the National Panhellenic Conference, each with its own set of values, traditions, and philanthropic focuses. It is the common desire to better ourselves and the world around us that unites our community as one! We are committed to inclusion and welcoming everyone who is looking to find their home in sorority life at UC San Diego.<br/><br/></div>
+    <div style="width: 606px; height: 209px; top: 1500px; left: 720px; position: absolute; color: #111C58; font-size: 22px; font-family: Crimson Text; font-weight: 600; word-wrap: break-word">Sorority and Fraternity Life (SFL) at UC San Diego affords its members more than just a lifetime membership in an organization.<br/><br/>The Panhellenic community prides itself on the pillars of women empowerment, service, and personal and intellectual development. Our members are sisters, leaders and scholars in and outside the community.<br/></div>
+    <!--Photos-->
+    <!--img_46971--><img style="width: 229px; height: 540px; position: absolute; top: 1508px; left: 468px" src="img_46971.png" />
+    <!--img_46982--><img style="width: 297px; height: 318px; position: absolute; top: 1730px; left: 720px" src="img_46982.png" />
+    <!--img_46963--><img style="width: 297px; height: 318px; position: absolute; top: 1730px; left: 1050px" src="img_46963.png" />
+    
+    <!--Divider Line-->
+    <div style="width: 1121px; height: 0px; left: 171px; top: 2200px; position: absolute; border: 2.50px #1187BA solid"></div>
+
+    <!--About Us-->
+    <div style="width: 954px; position: absolute; top: 2275px; left: 300px; height: 121px; text-align: center; color: #1187BA; font-size: 50px; font-family: Croissant One; font-weight: 400; word-wrap: break-word">About Us</div>
+    <!--Box-->
+    <div style="width: 1247.52px; height: 517.74px; position: absolute; left: 125px; top: 2400px; background: #D3F2FF"></div>
+    <!--Photo-->
+    <img style="width: 554.69px; position: absolute; left: 150px; top: 2432px; height: 454.95px" src="img_46951.png" />
+    <!--Text-->
+    <div style="width: 552.43px; position: absolute; top: 2450px; left: 750px; height: 329.96px; color: #111C58; font-size: 36px; font-family: Crimson Text; font-weight: 600; word-wrap: break-word">The Panhellenic community at UC San Diego is comprised of 12 sororities, including 11 National Panhellenic Conference organizations and 1 associate member organization.<br/>Panhellenic stands for service, scholarship, personal development and friendship.<br/></div>
+    <div style="width: 319.15px; position: absolute; top: 2850px; left: 1100px; height: 22.83px; color: #1494CB; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word"><a href="About.html">Meet the Chapters ></a></div>
+
+    <div class="contact-section" id="contact-section">
+      <div class="contact-text">Contact Us</div>
+      <div class="contact-icons">
+        <a href="mailto:vpofadministration@gmail.com"><img style="width: 48px; height: 48px;" src="Mail.svg"/></a>
+        <a href="https://www.instagram.com/panhellenicatucsd/?hl=en"><img style="width: 48px; height: 48px;" src="Group.svg" /></a>
+      </div>
+    </div>
+  </div>
+</div>
