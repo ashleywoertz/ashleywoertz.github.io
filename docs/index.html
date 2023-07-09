@@ -114,7 +114,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 100px;
+    top: 3%;
   }
 
   .centered {
@@ -123,6 +123,7 @@
     justify-content: center;
     position: absolute;
     align-items: center;
+    text-align: center;
   }
 
   .title-text {
@@ -147,8 +148,52 @@
     justify-content: center;
     position: absolute;
     /*left: 465px; */
-    top: 260px;
+    top: 8%;
     align-items: center;
+  }
+
+  .value-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: calc(10% + (45vw * 358.63 / 565) + 2vw); /* Adjust the distance from the top */
+  }
+
+  .value-container > div {
+    width: 50vw;
+    background: #D3F2FF;
+    margin-top: 7vw; /* Adjust the margin-top as desired */
+  }
+
+  .value-container > div:nth-child(2) {
+    height: 3.58vw;
+    font-size: 2.16vw;
+    color: #111C58;
+    font-family: Crimson Text;
+    font-weight: 600;
+    margin-top: 1vw; /* Adjust the margin-top as desired */
+  }
+
+  .value-container > div:nth-child(3) {
+    height: 6.25vw;
+    font-size: 2.5vw;
+    color: #1187BA;
+    font-family: Perpetua Titling MT;
+    font-weight: 700;
+    margin-top: 1vw; /* Adjust the margin-top as desired */
+  }
+
+  .line {
+    width: 70vw; /* Adjust the width as desired */
+    height: 5px; /* Adjust the height as desired */
+    background-color: #1187BA;
+    margin-top: 3vw; /* Adjust the margin-top as desired */
+    position: absolute;
+    top: calc(10% + (45vw * 358.63 / 565) + 29vw); /* Adjust the distance from the top */
+    left: 50%;
+    transform: translateX(-50%);
   }
 </style>
 
@@ -163,7 +208,7 @@
 </head>
 
 <div style="width: 100%; height: 3000px; position: relative">
-  <div style="width: 100%; max-width: 100%; height: 3000px; left: 0; right: 0; top: 0; position: absolute; background: white">
+  <div style="width: 100%; max-width: 100%; height: 3000px; left: 0; right: 0; top: 0; background: white">
     <div class="header">
       <div class="header-content"><u>Home</u></div>
       <div class="header-content"><a href="About.html">About</a></div>
@@ -181,15 +226,20 @@
       <img style="width: 45vw; height: calc(45vw* 358.63 / 565)" src="assets/img_46962.png" />
     </div>
     <!--Proud to Be Panhellenic-->
-    <div style="position: absolute; height: 87px; top: 700px; color: #111C58; font-size: 40px; font-family: Crimson Text; font-style: italic; font-weight: 700" class="centered">“Proud to be Panhellenic”</div>
+    <div style="position: absolute; height: 87px; top: calc(10% + (45vw* 358.63 / 565)); color: #111C58; font-size: 3.5vw; font-family: Crimson Text; font-style: italic; font-weight: 700" class="centered">“Proud to be Panhellenic”</div>
 
     <!--Core Values-->
-    <div style="width: 833px; height: 255.85px; left: 335px; position: absolute; top: 825px; background: #D3F2FF"></div>
-    <div style="width: 748.12px; left: 375px; height: 60.07px; top: 950px; position: absolute; text-align: center; color: #111C58; font-size: 36px; font-family: Crimson Text; font-weight: 600; word-wrap: break-word">Academics, Leadership, Service, Sisterhood, Diversity</div>
-    <div style="width: 793.33px; height: 78.66px; left: 350px; top: 875px; position: absolute; text-align: center; color: #1187BA; font-size: 40px; font-family: Perpetua Titling MT; font-weight: 700; word-wrap: break-word">Our Core Values</div>
-
+    <div class="value-container centered">
+      <div>
+        <div style="text-align: center; width: 95%; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+          <div style="color: #111C58; font-size: 2.6vw; font-family: Crimson Text; font-weight: 600; word-wrap: break-word; margin-top: 3vw">Our Core Values</div>
+        </div>
+        <div style="padding: 1vw; width: 92%; line-height: 3.7vw; height: 6.25vw; color: #1187BA; font-size: 2.5vw; font-family: Perpetua Titling MT; font-weight: 700; word-wrap: break-word; margin-top: 0.5vw; margin-bottom: 1.5vw;">Academics, Leadership, Service, Sisterhood, Diversity</div>
+      </div>
+    </div>    
+    
     <!--Divider Line-->
-    <div style="width: 1121px; height: 0px; left: 171px; top: 1275px; position: absolute; border: 2.50px #1187BA solid"></div>
+    <div class="line"></div>
 
     <!--Letter From the President-->
     <div style="width: 1277px; height: 75px; left: 275px; position: absolute; top: 1350px; color: #1187BA; font-size: 50px; font-family: Croissant One; font-weight: 400; word-wrap: break-word">Letter From the President: Why Panhellenic?</div>
