@@ -18,17 +18,17 @@
 
   .header-content {
     color: #111C58;
-    font-size: 25px;
+    font-size: 2vw;
     font-family: Helvetica;
     font-weight: 600;
     word-wrap: break-word;
     white-space: nowrap;
-    margin-right: 75px;
+    margin-right: 5vw;
   }
 
   .ContactUs a {
     color: white;
-    font-size: 25px;
+    font-size: 2vw;
     font-family: Helvetica;
     font-weight: 600;
     word-wrap: break-word;
@@ -117,10 +117,17 @@
     top: 100px;
   }
 
+  .centered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+  }
+
   .title-text {
-    font-size: 55px;
     color: #1494CB;
-    font-size: 96px;
+    font-size: 7vw;
     font-family: Croissant One;
     font-weight: 800;
     word-wrap: break-word;
@@ -134,6 +141,15 @@
     color: inherit;
   }
 
+  .carousel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    /*left: 465px; */
+    top: 260px;
+    align-items: center;
+  }
 </style>
 
 <head>
@@ -160,11 +176,12 @@
       <div class="title-text">PANHELLENIC</div>
     </div>
 
-    <!--Carousele-->
-    <img style="width: 565px; height: 358.63px; left: 465px; top: 260px; position: absolute" src="assets/img_46962.png" />
-
+    <!--Carousel-->
+    <div class = "carousel-container">
+      <img style="width: 45vw; height: calc(45vw* 358.63 / 565)" src="assets/img_46962.png" />
+    </div>
     <!--Proud to Be Panhellenic-->
-    <div style="width: 500px; left: 525px; position: absolute; height: 87px; top: 700px; color: #111C58; font-size: 40px; font-family: Crimson Text; font-style: italic; font-weight: 700">“Proud to be Panhellenic”</div>
+    <div style="position: absolute; height: 87px; top: 700px; color: #111C58; font-size: 40px; font-family: Crimson Text; font-style: italic; font-weight: 700" class="centered">“Proud to be Panhellenic”</div>
 
     <!--Core Values-->
     <div style="width: 833px; height: 255.85px; left: 335px; position: absolute; top: 825px; background: #D3F2FF"></div>
