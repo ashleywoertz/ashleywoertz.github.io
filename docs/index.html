@@ -89,7 +89,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: 3000; 
+    top: calc(18% + (45vw * 358.63 / 565) + 140vw);
   }
 
   .contact-text {
@@ -191,17 +191,14 @@
     background-color: #1187BA;
     margin-top: 3vw; /* Adjust the margin-top as desired */
     position: absolute;
-    top: calc(10% + (45vw * 358.63 / 565) + 29vw); /* Adjust the distance from the top */
     left: 50%;
     transform: translateX(-50%);
   }
 
   .letter-box {
       width: 80vw; /* Adjust the initial width and subtract any desired spacing in vw units */
-      height: 45vw; /* Adjust the initial height proportionally in vw units */
       position: absolute;
       background: #D3F2FF;
-      top: calc(18% + (45vw * 358.63 / 565) + 29vw); /* Adjust the initial position as needed in vw units */
       left: 50%;
       transform: translateX(-50%);
   }
@@ -217,8 +214,8 @@
   </script>
 </head>
 
-<div style="width: 100%; height: 3000px; position: relative">
-  <div style="width: 100%; max-width: 100%; height: 3000px; left: 0; right: 0; top: 0; background: white">
+<div style="width: 100%; height: calc(18% + (45vw * 358.63 / 565) + 140vw + 164px);; position: relative">
+  <div style="width: 100%; max-width: 100%; left: 0; right: 0; top: 0; background: white">
     <div class="header">
       <div class="header-content"><u>Home</u></div>
       <div class="header-content"><a href="About.html">About</a></div>
@@ -249,12 +246,12 @@
     </div>    
     
     <!--Divider Line-->
-    <div class="line"></div>
+    <div class="line" style="top: calc(10% + (45vw * 358.63 / 565) + 29vw);"></div>
 
    <!--Letter From the President-->
    <div style="width: 100%; position: absolute; top: calc(14.5% + (45vw * 358.63 / 565) + 29vw); transform: translateY(-50%); color: #1187BA; font-size: 4vw; font-family: Croissant One; font-weight: 400; word-wrap: break-word; text-align: center;">Letter From the President: Why Panhellenic?</div>
    <!--Letter Box-->
-   <div class="letter-box"></div>
+   <div class="letter-box" style="height: 45vw; top: calc(18% + (45vw * 358.63 / 565) + 29vw)"></div>
    <!--Letter-->
     <div style="width: 20vw; line-height: 2.2vw; top: calc(18% + (45vw * 358.63 / 565) + 31vw); position: absolute; left: calc(50% - 37vw); height: 30vw; color: #111C58; font-size: 1.3vw; font-family: Crimson Text; font-weight: 600; word-wrap: break-word">Hi! <br/><br/>The College Panhellenic Association is the largest women-run student organization on our campus at 12 chapters and about 1,100 members. Each of our sorority chapters is a member or affiliate member of the National Panhellenic Conference, each with its own set of values, traditions, and philanthropic focuses. It is the common desire to better ourselves and the world around us that unites our community as one! We are committed to inclusion and welcoming everyone who is looking to find their home in sorority life at UC San Diego.<br/><br/></div>
     <div style="width: 34vw; line-height: 2.2vw; height: 41vw; top: calc(18% + (45vw * 358.63 / 565) + 31vw); left: calc(18% + (45vw * 358.63 / 565) + 5vw); position: absolute; color: #111C58; font-size: 1.3vw; font-family: Crimson Text; font-weight: 600; word-wrap: break-word">Sorority and Fraternity Life (SFL) at UC San Diego affords its members more than just a lifetime membership in an organization.<br/><br/>The Panhellenic community prides itself on the pillars of women empowerment, service, and personal and intellectual development. Our members are sisters, leaders and scholars in and outside the community.<br/></div>
@@ -263,17 +260,18 @@
     <!--img_46982--><img style="width: 15vw; height: 19vw; position: absolute; top: calc(18% + (45vw * 358.63 / 565) + 52vw); left: calc(18% + (45vw * 358.63 / 565) + 5vw)" src="assets/img_46982.png" />
     <!--img_46963--><img style="width: 15vw; height: 19vw; position: absolute; top: calc(18% + (45vw * 358.63 / 565) + 52vw); left: calc(18% + (45vw * 358.63 / 565) + 24vw)" src="assets/img_46963.png" />
     <!--Divider Line-->
-    <div style="width: 1121px; height: 0px; left: 171px; top: 2200px; position: absolute; border: 2.50px #1187BA solid"></div>
+    <div class="line" style="top: calc(18% + (45vw * 358.63 / 565) + 80vw)"></div>
 
     <!--About Us-->
-    <div style="width: 954px; position: absolute; top: 2275px; left: 300px; height: 121px; text-align: center; color: #1187BA; font-size: 50px; font-family: Croissant One; font-weight: 400; word-wrap: break-word">About Us</div>
-    <!--Box-->
-    <div style="width: 1247.52px; height: 517.74px; position: absolute; left: 125px; top: 2400px; background: #D3F2FF"></div>
+    <div style="width: 100%; position: absolute; top: calc(18% + (45vw * 358.63 / 565) + 90vw); transform: translateY(-50%); color: #1187BA; font-size: 4vw; font-family: Croissant One; font-weight: 400; word-wrap: break-word; text-align: center;">About Us</div>
+
+    <!--About Us Box-->
+    <div class="letter-box" style="height:35vw; top: calc(18% + (45vw * 358.63 / 565) + 95vw)"></div>
     <!--Photo-->
-    <img style="width: 554.69px; position: absolute; left: 150px; top: 2432px; height: 454.95px" src="assets/img_46951.png" />
+    <img style="width: 31vw; position: absolute; left: calc(50% - 38vw); top: calc(18% + (45vw * 358.63 / 565) + 97vw); height: 31vw" src="assets/img_46951.png" />
     <!--Text-->
-    <div style="width: 552.43px; position: absolute; top: 2450px; left: 750px; height: 329.96px; color: #111C58; font-size: 36px; font-family: Crimson Text; font-weight: 600; word-wrap: break-word">The Panhellenic community at UC San Diego is comprised of 12 sororities, including 11 National Panhellenic Conference organizations and 1 associate member organization.<br/>Panhellenic stands for service, scholarship, personal development and friendship.<br/></div>
-    <div style="width: 319.15px; position: absolute; top: 2850px; left: 1100px; height: 22.83px; color: #1494CB; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word"><a href="About.html">Meet the Chapters ></a></div>
+    <div style="width: 43vw; line-height: 2.8vw; position: absolute; top: calc(18% + (45vw * 358.63 / 565) + 100vw); left: calc(50% - 5vw); height: 30vw; color: #111C58; font-size: 2.4vw; font-family: Crimson Text; font-weight: 540; word-wrap: break-word">The Panhellenic community at UC San Diego is comprised of 12 sororities, including 11 National Panhellenic Conference organizations and 1 associate member organization.<br/>Panhellenic stands for service, scholarship, personal development and friendship.<br/></div>
+    <div style="width: 20vw; position: absolute; top: calc(18% + (45vw * 358.63 / 565) + 125vw); left: calc(50% - 5vw); color: #1494CB; font-size: 2.2vw; font-family: Inter; font-weight: 500; word-wrap: break-word"><a href="About.html">Meet the Chapters ></a></div>
 
     <div class="contact-section" id="contact-section">
       <div class="contact-text">Contact Us</div>
