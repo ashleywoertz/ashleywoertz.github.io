@@ -140,6 +140,24 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .rowOneContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    margin-left: -2vw;
+    margin-right: 2vw;
+    top: 120vw; 
+  }
+
+  .rowOneColumns {
+    text-align: center;
+    font-size: 3vw;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+
 </style>
 
 <head>
@@ -403,83 +421,102 @@
         <div class="line" style="top: 68vw"></div>
                 
        <!--Executive Board-->
-        <div id="exec" style="width: 100%; text-align: center; top: 74vw; position: absolute; color: #1494CB; font-size: 5vw; font-family: Croissant One; font-weight: 400; word-wrap: break-word">Executive Board Members</div>
+        <div id="exec" style="width: 100%; text-align: center; top: 75vw; position: absolute; color: #1494CB; font-size: 5vw; font-family: Croissant One; font-weight: 400; word-wrap: break-word">Executive Board Members</div>
+        
         <!--President--> 
-        <div style="width: 850px; height: 700px; top: 1250px; position: absolute; background: #D3F2FF; align-self: center">
-          <div style="width: 450px; align-self: center; left: 200px; height: 50px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">PRESIDENT</div>
+        <div style="width: 55vw; height: 45vw; top: 85vw; position: absolute; background: #D3F2FF; align-items: center">
+          <div style="text-align: center; margin-top: 38vw; color: #1494CB; font-size: 3vw; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">PRESIDENT</div>
         </div>
-        <img style="width: 417px; height: 518px; align-self: center; top: 1310px; position: absolute" src="assets/president.png" />
-          
+        <img style="width: 40vw; height: 30vw; align-self: center; top: 90vw; position: absolute" src="assets/president.png" />
+        
         <!--ROW ONE-->
-        <!--VP of Service-->
-        <div style="width: 460px; height: 705px; left: 50px; top: 1975px; position: absolute; background: #D3F2FF">
-          <div style="width: 450px; height: 50px; left: 4px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF SERVICE</div>
-        </div>
-        <img style="width: 370px; height: 525px; left: 92px; top: 2025px; position: absolute" src="assets/service.png" />
 
-        <!--VP Judicial Affairs-->
-        <div style="width: 460px; height: 705px; align-items: center; top: 1975px; position: absolute; background: #D3F2FF">
-          <div style="width: 450px; height: 50px; left: 15px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF ADMINISTRATION AND JUDICIAL AFFAIRS</div>
+        <div class="rowOneContainer" style="position: absolute; top: 135vw">
+          <!--VP of Service-->
+          <div class="rowOneColumns">
+            <div style="width: 30vw; height: 45vw; background: #D3F2FF">
+              <div style="text-align: center; margin-top: 38vw; color: #1494CB; font-size: 1.8vw; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF SERVICE</div>
+            </div>
+            <img style="width: 25vw; margin-top: -42vw; height: 30vw; align-self: center;" src="assets/service.png" />
+          </div>
+          <!--VP Judicial Affairs-->
+          <div class="rowOneColumns">
+            <div style="width: 30vw; height: 45vw; background: #D3F2FF">
+              <div style="text-align: center; margin-top: 38vw; color: #1494CB; font-size: 1.8vw; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF ADMINISTRATION AND JUDICIAL AFFAIRS</div>
+            </div>
+            <img style="width: 25vw; height: 30vw; margin-top: -42vw; align-self: center;" src="assets/admin.png" />
+          </div>
+          <!--VP Marketing-->
+          <div class="rowOneColumns">
+            <div style="width: 30vw; height: 45vw; background: #D3F2FF">
+              <div style="text-align: center; margin-top: 38vw; color: #1494CB; font-size: 1.8vw; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF MARKETING</div>
+            </div>
+            <img style="width: 25vw; height: 30vw; margin-top: -42vw; align-self: center;" src="assets/marketing.png" />
+          </div>
         </div>
-        <img style="width: 370px; height: 525px; align-self: center; top: 2025px; position: absolute" src="assets/admin.png" />
-
-        <!--VP Marketing-->
-        <div style="width: 460px; height: 705px; left: 1025px; top: 1975px; position: absolute; background: #D3F2FF">
-          <div style="width: 450px; height: 50px; left: 10px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF MARKETING</div>
-        </div>
-        <img style="width: 370px; height: 525px; left: 1070px; top: 2025px; position: absolute" src="assets/marketing.png" />
-
-        <!--ROW TWO-->
-        <!--Blank Photo-->
-        <div style="width: 460px; height: 705px; left: 50px; top: 2705px; position: absolute; background: #D3F2FF">
-          <div style="width: 450px; height: 50px; left: 4px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word"></div>
-        </div>
-        <img style="width: 370px; height: 605px; left: 92px; top: 2755px; position: absolute" src="assets/spacefill.png" />
-
-        <!--VP Membership-->
-        <div style="width: 460px; height: 705px; align-items: center; top: 2705px; position: absolute; background: #D3F2FF">
-          <div style="width: 450px; height: 50px; left: 15px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF MEMBERSHIP</div>
-        </div>
-        <img style="width: 370px; height: 525px; align-self: center; top: 2755px; position: absolute" src="assets/membership.png" />
-
-        <!--VP Scholarship-->
-        <div style="width: 460px; height: 705px; left: 1025px; top: 2705px; position: absolute; background: #D3F2FF">
-          <div style="width: 450px; height: 50px; left: 10px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF SCHOLARSHIP</div>
-        </div>
-        <img style="width: 370px; height: 525px; left: 1070px; top: 2755px; position: absolute" src="assets/scholarship.png" />
+        
       
+        <!--ROW TWO-->
+        <div class="rowOneContainer" style="position: absolute; top: 182vw">
+          <!--Blank Photo-->
+          <div class="rowOneColumns">
+            <div style="width: 30vw; height: 45vw; background: #D3F2FF"></div>
+            <img style="width: 25vw; margin-top: -42vw; height: 39vw; align-self: center;" src="assets/spacefill.png" />
+          </div>
+          <!--VP Membership-->
+          <div class="rowOneColumns">
+            <div style="width: 30vw; height: 45vw; background: #D3F2FF">
+              <div style="text-align: center; margin-top: 38vw; color: #1494CB; font-size: 1.8vw; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF MEMBERSHIP</div>
+            </div>
+            <img style="width: 25vw; height: 30vw; margin-top: -42vw; align-self: center;" src="assets/membership.png" />
+          </div>
+          <!--VP of Scholarship-->
+          <div class="rowOneColumns">
+            <div style="width: 30vw; height: 45vw; background: #D3F2FF">
+              <div style="text-align: center; margin-top: 38vw; color: #1494CB; font-size: 1.8vw; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF SCHOLARSHIP</div>
+            </div>
+            <img style="width: 25vw; height: 30vw; margin-top: -42vw; align-self: center;" src="assets/scholarship.png" />
+          </div>
+        </div>
 
         <!--ROW THREE-->
-        <!--VP Finance-->
-        <div style="width: 460px; height: 705px; left: 50px; top: 3435px; position: absolute; background: #D3F2FF">
-          <div style="width: 450px; height: 50px; left: 4px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF FINANCE</div>
+
+        <div class="rowOneContainer" style="position: absolute; top: 229vw">
+          <!--VP of Finance-->
+          <div class="rowOneColumns">
+            <div style="width: 30vw; height: 45vw; background: #D3F2FF">
+              <div style="text-align: center; margin-top: 38vw; color: #1494CB; font-size: 1.8vw; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF FINANCE</div>
+            </div>
+            <img style="width: 25vw; margin-top: -42vw; height: 30vw; align-self: center;" src="assets/finance.png" />
+          </div>
+          <!--VP of Athletics-->
+          <div class="rowOneColumns">
+            <div style="width: 30vw; height: 45vw; background: #D3F2FF">
+              <div style="text-align: center; margin-top: 38vw; color: #1494CB; font-size: 1.8vw; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF WELLBEING AND ATHLETICS</div>
+            </div>
+            <img style="width: 25vw; height: 30vw; margin-top: -42vw; align-self: center;" src="assets/athletics.png" />
+          </div>
+          <!--VP of DEI-->
+          <div class="rowOneColumns">
+            <div style="width: 30vw; height: 45vw; background: #D3F2FF">
+              <div style="text-align: center; margin-top: 38vw; color: #1494CB; font-size: 1.8vw; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF EXTERNAL RELATIONS AND EDI</div>
+            </div>
+            <img style="width: 25vw; height: 30vw; margin-top: -42vw; align-self: center;" src="assets/edi.png" />
+          </div>
         </div>
-        <img style="width: 370px; height: 525px; left: 92px; top: 3485px; position: absolute" src="assets/finance.png" />
 
-        <!--VP Athletics-->
-        <div style="width: 460px; height: 705px; align-items: center; top: 3435px; position: absolute; background: #D3F2FF">
-          <div style="width: 450px; height: 50px; left: 15px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF WELLBEING AND ATHLETICS</div>
-        </div>
-        <img style="width: 370px; height: 525px; align-self: center; top: 3485px; position: absolute" src="assets/athletics.png" />
+        <!--Divider Line-->
+        <div class="line" style="top: 278vw"></div>
+        
+        <!--DEI Section-->
+        <div id="dei" style="width: 100%; text-align: center; top: 286vw; position: absolute; color: #1494CB; font-size: 5vw; font-family: Croissant One; font-weight: 400; word-wrap: break-word">Diversity, Equity, and Inclusion</div>
 
-        <!--VP DEI-->
-        <div style="width: 460px; height: 705px; left: 1025px; top: 3435px; position: absolute; background: #D3F2FF">
-          <div style="width: 450px; height: 50px; left: 10px; top: 600px; position: absolute; text-align: center; color: #1494CB; font-size: 32px; font-family: Abhaya Libre ExtraBold; font-weight: 800; word-wrap: break-word">VP OF EXTERNAL RELATIONS AND EDI</div>
-        </div>
-        <img style="width: 370px; height: 525px; left: 1070px; top: 3485px; position: absolute" src="assets/edi.png" />
-      
-
-
-            <!--DEI Section-->
 
             <div style="width: 1548px; height: 1300px; left: -51px; top: 4333px; position: absolute">
               <div style="width: 1126.15px; height: 1263px; left: 210px; top: 140px; position: absolute; background: #D3F2FF"></div>
-              <div style="width: 1548px; height: 101px; left: 0px; top: 19px; position: absolute; text-align: center; color: #1494CB; font-size: 54px; font-family: Croissant One; font-weight: 400; word-wrap: break-word">Diversity, Equity, and Inclusion</div>
-              <!--Divider Line-->
-              <div style="width: 1121px; height: 0px; left: 200px; top: 0px; position: absolute; border: 2.50px #1494CB solid"></div>
               
               <div style="width: 1010px; height: 1184px; left: 268px; top: 172px; position: absolute">
-                <div id="dei" style="left: 187px; top: 0px; position: absolute; color: #111C58; font-size: 50px; font-family: Inter; font-weight: 600; word-wrap: break-word">Panhellenic DEI Statement  </div>
+                <div style="left: 187px; top: 0px; position: absolute; color: #111C58; font-size: 50px; font-family: Inter; font-weight: 600; word-wrap: break-word">Panhellenic DEI Statement  </div>
                 <div style="left: 276px; top: 495px; position: absolute; color: #111C58; font-size: 47.79px; font-family: Inter; font-weight: 600; word-wrap: break-word">Mission Statement</div>
                 <div style="width: 1010px; height: 449px; left: 0px; top: 485px; position: absolute; text-align: center; color: #111C58; font-size: 32px; font-family: Inter; font-weight: 500; word-wrap: break-word"><br/>​<br/>Panhellenic’s Diversity and Inclusion Committee is committed to creating an inclusive environment for all future and current sorority women. We strive to provide information and educational opportunities to create a safer and more inclusive Panhellenic environment. As an organization at a school nationally recognized for being diverse, we hope to have a Panhellenic community that reflects the diversity seen within UC San Diego’s student body. Our team’s goal is to provide a space for women of all races, backgrounds, religions, sexualities, socioeconomic statuses, etc to feel safe and succeed.<br/>​<br/>           </div>
                 <div style="width: 315px; height: 56px; left: 361px; top: 1074px; position: absolute; color: #111C58; font-size: 40px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word"><a href="https://www.stopasianhate.info/?utm_source=Instagram+Stories&utm_medium=Social&utm_campaign=SPRNG-COMM-SAH&utm_term=21-02-26-PST-5&utm_content=SAHCommunity-Feb26-IGStory&geo=true">AAPI Resources</a></div>
